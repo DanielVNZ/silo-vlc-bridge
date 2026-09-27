@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>VLC Bridge · Settings</title><link rel="stylesheet" href="options.css"></head>
+<body>
+<main class="shell">
+  <header><a class="brand" href="options.html"><span class="brand-icon" aria-hidden="true">▶</span> VLC Bridge</a><span class="version" id="version">SETTINGS</span></header>
+  <section class="intro"><div class="eyebrow">YOUR LIBRARY. YOUR PLAYER.</div><h1>Press play.<br><span>Make yourself at home.</span></h1><p>Your Silo library, straight to VLC. Original quality,<br class="wide"> with your place saved for next time.</p></section>
+  <div class="route" aria-label="Silo streams the original file to VLC"><span><i class="dot"></i> Silo</span><span class="route-line"></span><span class="route-label">ORIGINAL FILE</span><span class="route-line"></span><span><span class="tiny-play">▶</span> VLC</span></div>
+  <section class="card server-card" aria-labelledby="server-title"><div class="card-heading"><div><span class="step">01 / CONNECT</span><h2 id="server-title">Your media server</h2></div><span class="pill" id="server-state">Not configured</span></div><p class="description">Choose the Silo instance you want to watch from.</p>
+    <form id="settings"><label for="server">Server address</label><div class="input-row"><input id="server" type="url" placeholder="https://silo.example.com" autocomplete="url" spellcheck="false" required aria-describedby="server-help"><button id="save" class="primary" type="submit">Save connection <span aria-hidden="true">↗</span></button></div><p id="server-help" class="hint">Use the same address you open in your browser. Your password stays with Silo.</p></form><p id="status" class="feedback" role="status" aria-live="polite"></p>
+  </section>
+  <div class="cards">
+    <section class="card" aria-labelledby="launcher-title"><span class="step">02 / PLAY LOCALLY</span><div class="card-heading"><h2 id="launcher-title">Windows launcher</h2><span id="launcher-dot" class="state-dot" aria-hidden="true"></span></div><p class="description">The small companion that opens VLC on this PC.</p><button id="test" class="secondary" type="button">Check connection <span aria-hidden="true">↗</span></button><p id="test-result" class="feedback" role="status" aria-live="polite">Connection hasn’t been checked yet.</p></section>
+    <section class="card" aria-labelledby="sync-title"><span class="step">03 / PICK UP WHERE YOU LEFT OFF</span><h2 id="sync-title">Progress sync</h2><div class="cadence"><strong>10<span>s</span></strong><span>between saves<br>while you watch</span></div><p id="sync-status" class="feedback" role="status" aria-live="polite">No synced playback yet.</p><p class="hint">Also saves on pause, resume, and stop.</p></section>
+  </div>
+  <aside class="note"><span aria-hidden="true">ⓘ</span><p>Keep Chrome or Edge running while you watch. After changing your server, reload your Silo tab.</p></aside>
+  <footer><span>Unchanged files. No server conversion.</span><details><summary>Help & removal</summary><p>Choose audio and subtitles inside VLC. Streams on a separate worker host aren’t supported yet.</p><p>To use the browser player again, disable VLC Bridge and reload Silo. To remove the Windows companion, open VLC Bridge Setup and select <strong>Uninstall</strong>, then remove the browser extension.</p></details></footer>
+</main><script src="options.js"></script></body></html>

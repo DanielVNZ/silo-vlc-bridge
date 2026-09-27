@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "VLC Bridge for Silo",
+  "version": "0.2.8",
+  "description": "Open original Silo video streams in VLC on Windows.",
+  "permissions": [
+    "nativeMessaging",
+    "storage",
+    "scripting"
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Configure VLC Bridge"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv8+F2UfFlnyVbdWDZO+PcH9Ja/ABxoRp95YzCteEwfFkmXHTBHJvDlIjdkkui2oLdLeJQnvc1wYIh/XmvUiuT0nGEUtqiEAbO9tYz40lIDXSHR0C1jEri82YEJe2GUZN6tI2MaTPCP+UNSjy7B7/86Xc5bPvW5L2JENYzvQJmHAL+QTUUtDq6LVa8ZU0HoQRNEW5vtBjzeYqTmXnNt8CY0tFsOCr+Q2/z+GpYNW1a0ig9B9begKaQzxzA4Yv1yZzHfZ1tP03EDrXtar3c1i9N2KUaH+qaX2d7GTg++pvVdiplZbbgYpSc0RIE8HPQ26pYMy0Brk663F4gqA2SrJyrwIDAQAB"
+}

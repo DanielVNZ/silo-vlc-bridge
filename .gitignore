@@ -1,0 +1,6 @@
+/build/
+/dist/
+*.exe
+*.pdb
+*.zip
+host/native-host.json
